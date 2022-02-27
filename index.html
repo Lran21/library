@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <h1>Library</h1>
+    <div class="container">
+        <button id="newBook">+ New Book</button>
+        <form id="bookForm" style="display:none;">
+            <label for="text" name="title">Book name:</label>
+            <input type="text" name="title">
+            <label for="text" name="authorName">Author name:</label>
+            <input type="text" name="authorName">
+            <label for="number" name="pageNum">Number of pages:</label>
+            <input type="number" name="pageNum">
+            <div class="readCheckbox">
+            <label for="checkbox" name="readTrue">Read:</label>
+            <input type="checkbox" name="accept" id="accept" value="yes"><br>
+            </div>
+            <button id="submitBook">Submit Book</button>
+            
+        </form>
+        <div class="books" id="booksOutput"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
