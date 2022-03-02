@@ -40,7 +40,7 @@ function addBookToLibrary(){
     
 
     divTitle.textContent = "Title: " + bookTitle;
-    divAuthor.textContent = "Author:" + authorName;
+    divAuthor.textContent = "Author: " + authorName;
     divPages.textContent = "Pages: " + numPages;
 
     //check if read is checked or not and create button
@@ -83,13 +83,11 @@ function addBookToLibrary(){
         if(hasRead === true){
             readBtn.textContent = "Not Read"
             readBtn.style.backgroundColor = '#ff0021';
-            createCard.appendChild(readBtn);
             hasRead = false;
         }
         else if(hasRead === false){
             readBtn.textContent = "Read";
             readBtn.style.backgroundColor = '#5cdb5c';
-            createCard.appendChild(readBtn);
             hasRead = true;
         }
     })
